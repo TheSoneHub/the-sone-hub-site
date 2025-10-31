@@ -1,8 +1,31 @@
 import { Navigation } from "@/components/navigation"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Calendar, Clock, ArrowRight } from "lucide-react"
 import Link from "next/link"
+
+// Inline SVG Icons
+const CalendarIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+    <line x1="16" y1="2" x2="16" y2="6" />
+    <line x1="8" y1="2" x2="8" y2="6" />
+    <line x1="3" y1="10" x2="21" y2="10" />
+  </svg>
+)
+
+const ClockIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <circle cx="12" cy="12" r="10" />
+    <polyline points="12 6 12 12 16 14" />
+  </svg>
+)
+
+const ArrowRightIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <line x1="5" y1="12" x2="19" y2="12" />
+    <polyline points="12 5 19 12 12 19" />
+  </svg>
+)
 
 const articles = [
   {
@@ -95,7 +118,7 @@ export default function LearnPage() {
 
                       <div className="flex items-center gap-4 text-sm text-muted-foreground">
                         <div className="flex items-center gap-1.5">
-                          <Calendar className="w-4 h-4" />
+                          <CalendarIcon className="w-4 h-4" />
                           {new Date(article.date).toLocaleDateString("en-US", {
                             month: "short",
                             day: "numeric",
@@ -103,13 +126,13 @@ export default function LearnPage() {
                           })}
                         </div>
                         <div className="flex items-center gap-1.5">
-                          <Clock className="w-4 h-4" />
+                          <ClockIcon className="w-4 h-4" />
                           {article.readTime}
                         </div>
                       </div>
                     </div>
 
-                    <ArrowRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 mt-1" />
+                    <ArrowRightIcon className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 mt-1" />
                   </div>
                 </Card>
               </Link>

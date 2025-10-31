@@ -3,7 +3,29 @@
 import { useState, useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { MessageCircle, X, Send } from "lucide-react"
+
+const MessageCircleIcon = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+    />
+  </svg>
+)
+
+const XIcon = () => (
+  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+  </svg>
+)
+
+const SendIcon = () => (
+  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+  </svg>
+)
 
 const mentors = [
   { id: "Code Mentor", name: "Code Mentor", icon: "💻" },
@@ -68,7 +90,7 @@ export function AIChatWidget() {
           onClick={() => setIsOpen(true)}
           className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-black text-white rounded-full shadow-lg hover:shadow-xl transition-all hover:scale-110 flex items-center justify-center"
         >
-          <MessageCircle className="w-6 h-6" />
+          <MessageCircleIcon />
         </button>
       )}
 
@@ -79,7 +101,7 @@ export function AIChatWidget() {
           <div className="flex items-center justify-between p-4 border-b border-black bg-black text-white">
             <h3 className="font-semibold">AI Assistant</h3>
             <button onClick={() => setIsOpen(false)} className="hover:bg-white/20 p-1 rounded transition-colors">
-              <X className="w-5 h-5" />
+              <XIcon />
             </button>
           </div>
 
@@ -149,7 +171,7 @@ export function AIChatWidget() {
                 disabled={isLoading || !input.trim()}
                 className="bg-black text-white hover:bg-gray-800"
               >
-                <Send className="w-4 h-4" />
+                <SendIcon />
               </Button>
             </div>
           </div>
