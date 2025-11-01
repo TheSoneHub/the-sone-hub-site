@@ -17,6 +17,7 @@ TheSoneHub is a modern, Notion-inspired personal workspace platform designed for
 ### 💼 Projects Showcase
 - **TranBook v2.0** - Privacy-first in-app document translator with select-to-translate functionality
 - **leaEng v4.2** - AI-powered English learning app with comprehensive skill development
+- **ViralScript v1.0** - AI-Powered Script Editor for Short-Form Content
 - Detailed project cards with logos, descriptions, and live demo links
 
 ### 📚 Learn Space
@@ -171,6 +172,14 @@ All cards throughout the site feature:
 - Live Demo: [https://leaeng.netlify.app/](https://leaeng.netlify.app/)
 - Features: Reading, writing, speaking, listening practice
 - Tech: HTML/CSS/JS, Google Gemini AI
+
+### ViralScript v1.0
+**AI-Powered Script Editor for Short-Form Content**
+- Live Demo: [https://viralscript.netlify.app/](https://viralscript.netlify.app/)
+- Features: Smart editor workspace, AI creative coach, live analysis engine, hook bank
+- Tech: HTML/CSS/JS, Google Gemini API, Marked.js
+- Philosophy: "The Coach, Not The Crutch" - teaching viral content strategy
+- Target: Myanmar short-form content creators (TikTok, Reels, YouTube Shorts)
 
 ## Author
 
