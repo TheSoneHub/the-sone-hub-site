@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 
@@ -20,8 +21,12 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-primary/20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-semibold text-foreground hover:text-primary transition-colors">
-            TheSoneHub
+          <Link
+            href="/"
+            className="flex items-center gap-3 text-xl font-semibold text-foreground hover:text-primary transition-colors"
+          >
+            <Image src="/thesonehub-logo.jpg" alt="TheSoneHub Logo" width={40} height={40} className="rounded-lg" />
+            <span>TheSoneHub</span>
           </Link>
 
           <div className="flex items-center gap-1">
