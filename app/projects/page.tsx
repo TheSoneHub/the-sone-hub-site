@@ -24,18 +24,29 @@ import Image from "next/image"
 const projects = [
   {
     title: "TranBook",
-    description: "A modern translation and language learning platform with real-time collaboration features.",
-    image: "/translation-app-interface.png",
-    tags: ["Next.js", "TypeScript", "AI", "Real-time"],
+    subtitle: "In-App Document Translator",
+    version: "v2.0",
+    logo: "/tranbook-logo.svg", // Added TranBook logo
+    description:
+      "A lightweight, privacy-first web app that lets you read PDF/DOCX/EPUB files in the browser and translate selected text instantly using AI. TranBook focuses on fast, contextual translations while keeping your documents local to the browser. Ideal for language learners and readers who want immediate, in-context translations without leaving the page.",
+    features: [
+      "Select-to-translate: highlight any text in a document for instant AI-powered translation",
+      "Per-word dictionary mode: dictionary-style translations with example sentences for language learners",
+      "Local library: upload and store PDF, DOCX, and EPUB files in your browser (IndexedDB)",
+      "Exportable history: export session translations to Markdown for notes",
+      "Responsive UI with resizable panes and dark/light theme toggle",
+      "Optional Lo-fi background audio player for reading ambiance",
+    ],
+    tags: ["HTML5", "CSS3", "JavaScript", "pdf.js", "Google Gemini API", "IndexedDB"], // Updated tech stack
     github: "https://github.com",
-    demo: "https://tranbook.demo",
+    demo: "https://tranbook.netlify.app/", // Updated to actual app URL
     year: "2024",
   },
   {
     title: "leaEng",
     subtitle: "Global Connect AI English App",
     version: "v4.2",
-    logo: "/leaeng-logo.svg", // Updated to use SVG logo
+    logo: "/leaeng-logo.svg",
     description:
       "Your Personalized AI-Powered Language Learning Companion. A comprehensive web application designed to provide a rich, personalized, and engaging platform for English language learners. Leverages Google's Generative AI (Gemini) to create a tailored experience that adapts to the user's skill level, from A1 to C2.",
     features: [
@@ -48,7 +59,7 @@ const projects = [
     ],
     tags: ["HTML5", "CSS3", "JavaScript", "Google Gemini AI", "YouTube API"],
     github: "https://github.com",
-    demo: "https://leaeng.netlify.app/", // Updated to actual app URL
+    demo: "https://leaeng.netlify.app/",
     year: "2024",
   },
   {
