@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import Image from "next/image"
 
 interface Particle {
   x: number
@@ -129,6 +130,15 @@ export function SphereWelcome({ onComplete }: { onComplete: () => void }) {
       <canvas ref={canvasRef} className="absolute inset-0" />
 
       <div className="relative z-10 text-center px-8 max-w-4xl">
+        <div className="flex justify-center mb-8 animate-fade-in">
+          <Image
+            src="/thesonehub-logo.jpg"
+            alt="TheSoneHub Logo"
+            width={120}
+            height={120}
+            className="rounded-2xl shadow-2xl"
+          />
+        </div>
         <h1 className="text-6xl md:text-7xl font-bold text-black mb-6 animate-fade-in">Welcome to TheSoneHub</h1>
         <p className="text-xl md:text-2xl text-gray-700 mb-12 animate-fade-in-delay leading-relaxed">
           Your space for creativity, connection, and inspiration. A personal ecosystem for projects, learning, and

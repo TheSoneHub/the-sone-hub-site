@@ -2,6 +2,7 @@ import { Navigation } from "@/components/navigation"
 import { TerminalGame } from "@/components/terminal-game"
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
+import Image from "next/image"
 
 const ArrowRightIcon = () => (
   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,6 +124,15 @@ export default function HomePage() {
       <main className="pt-32 pb-20 px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
+            <div className="flex justify-center mb-8">
+              <Image
+                src="/thesonehub-logo.jpg"
+                alt="TheSoneHub Logo"
+                width={120}
+                height={120}
+                className="rounded-2xl shadow-lg"
+              />
+            </div>
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6 tracking-tight">
               Welcome to TheSoneHub
             </h1>
