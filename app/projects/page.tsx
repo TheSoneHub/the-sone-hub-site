@@ -26,7 +26,7 @@ const projects = [
     title: "TranBook",
     subtitle: "In-App Document Translator",
     version: "v2.0",
-    logo: "/tranbook-logo.svg", // Added TranBook logo
+    logo: "/tranbook-logo.svg",
     description:
       "A lightweight, privacy-first web app that lets you read PDF/DOCX/EPUB files in the browser and translate selected text instantly using AI. TranBook focuses on fast, contextual translations while keeping your documents local to the browser. Ideal for language learners and readers who want immediate, in-context translations without leaving the page.",
     features: [
@@ -37,9 +37,9 @@ const projects = [
       "Responsive UI with resizable panes and dark/light theme toggle",
       "Optional Lo-fi background audio player for reading ambiance",
     ],
-    tags: ["HTML5", "CSS3", "JavaScript", "pdf.js", "Google Gemini API", "IndexedDB"], // Updated tech stack
+    tags: ["HTML5", "CSS3", "JavaScript", "pdf.js", "Google Gemini API", "IndexedDB"],
     github: "https://github.com",
-    demo: "https://tranbook.netlify.app/", // Updated to actual app URL
+    demo: "https://tranbook.netlify.app/",
     year: "2024",
   },
   {
@@ -60,6 +60,26 @@ const projects = [
     tags: ["HTML5", "CSS3", "JavaScript", "Google Gemini AI", "YouTube API"],
     github: "https://github.com",
     demo: "https://leaeng.netlify.app/",
+    year: "2024",
+  },
+  {
+    title: "ViralScript",
+    subtitle: "Social Media Hook Generator",
+    version: "v1.0",
+    logo: "/viralscript-logo.svg",
+    description:
+      "A lightweight client-side web app that helps generate and manage short, catchy hooks for social posts and marketing. Built with plain HTML, CSS, and JavaScript, ViralScript runs entirely in your browser with no server or build step required. Perfect for content creators and marketers who need quick, engaging hooks for their social media content.",
+    features: [
+      "Lightweight, dependency-free front-end for instant loading",
+      "Generates and stores hooks using local storage for privacy",
+      "AI-assisted script components for intelligent hook suggestions",
+      "Hook bank with sample data for inspiration",
+      "Simple, intuitive UI for quick hook generation",
+      "No installation required - runs directly in browser",
+    ],
+    tags: ["HTML5", "CSS3", "JavaScript", "LocalStorage", "AI Helpers"],
+    github: "https://github.com",
+    demo: "https://viralscript.netlify.app/",
     year: "2024",
   },
   {
