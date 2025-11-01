@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   title: "TheSoneHub - Personal Ecosystem",
   description: "A personal hub for projects, learning, and community by Pyae Sone Phyo",
   generator: "v0.app",
+  icons: {
+    icon: "/thesonehub-logo.jpg",
+    apple: "/thesonehub-logo.jpg",
+  },
 }
 
 export default function RootLayout({
